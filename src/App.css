@@ -1,38 +1,40 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.donatebutton {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}.donatebutton >div>div>input {
+  background-color: rgb(0, 128, 128);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  width: 60%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.donatesub {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30px;
+}
+.donatesub >input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.donatesub >button {
+  padding: 5px;
+  background-color: rgb(15, 15, 70);
   color: white;
+  font-size: large;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.donatesub >span {
+  float: right;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+  color: rgb(12, 118, 218);
 }
